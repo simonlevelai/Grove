@@ -25,8 +25,9 @@ obsidian-plugin/node_modules/
 # Session state (not source)
 .remember/
 
-# Claude Code local settings (not source)
+# Claude Code local settings and internal specs (not source)
 .claude/settings.local.json
+.claude/specs/
 
 # OS
 .DS_Store
