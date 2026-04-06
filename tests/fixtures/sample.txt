@@ -1,0 +1,11 @@
+Grove Knowledge Base Engine
+
+Grove is a tool for building structured knowledge bases from raw documents.
+It uses large language models to compile sources into wiki articles.
+
+The ingest pipeline converts PDF, HTML, and text files into markdown.
+Each converted file is scored for quality and checked for duplicates
+before being added to the knowledge base.
+
+The compilation engine then reads all ingested sources and produces
+a set of interlinked wiki articles with proper citations and metadata.

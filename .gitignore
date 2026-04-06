@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+.venv*/
+*.egg
+
+# Testing / tooling
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Obsidian plugin
+obsidian-plugin/node_modules/
+
+# Grove user data (runtime, not source)
+.grove/
+!.grove-example/.grove/
+
+# Session state (not source)
+.remember/
+
+# Claude Code local settings (not source)
+.claude/settings.local.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Secrets
+.env
+.env.*

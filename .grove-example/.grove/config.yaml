@@ -1,0 +1,32 @@
+llm:
+  providers:
+    anthropic:
+      api_key: ${ANTHROPIC_API_KEY}
+    ollama:
+      base_url: http://localhost:11434
+  routing:
+    fast:
+      provider: ollama
+      model: llama3.2
+      fallback:
+        provider: anthropic
+        model: claude-haiku-4-5-20251001
+    standard:
+      provider: anthropic
+      model: claude-sonnet-4-6
+    powerful:
+      provider: anthropic
+      model: claude-opus-4-6
+budget:
+  daily_limit_usd: 5.0
+  warn_at_usd: 3.0
+compile:
+  quality_threshold: partial
+  phase: 0
+  max_output_tokens: 65536
+search:
+  embedding_model: nomic-embed-text
+  hybrid_alpha: 0.5
+git:
+  auto_commit: true
+  commit_message_prefix: 'grove:'

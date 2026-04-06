@@ -1,0 +1,84 @@
+/* Grove — Obsidian plugin styles
+   Keeps specificity low so Obsidian theme variables apply naturally. */
+
+/* ── Query panel ─────────────────────────────────────────────────── */
+
+.grove-query-panel {
+	padding: var(--size-4-3);
+}
+
+.grove-query-panel h3 {
+	margin-top: 0;
+	margin-bottom: var(--size-4-3);
+}
+
+.grove-query-input {
+	width: 100%;
+	min-height: 4em;
+	resize: vertical;
+	margin-bottom: var(--size-4-2);
+	font-family: var(--font-interface);
+	font-size: var(--font-ui-small);
+}
+
+.grove-query-controls {
+	display: flex;
+	align-items: center;
+	gap: var(--size-4-2);
+	margin-bottom: var(--size-4-3);
+}
+
+.grove-mode-wrapper {
+	display: flex;
+	align-items: center;
+	gap: var(--size-4-1);
+}
+
+.grove-mode-wrapper label {
+	font-size: var(--font-ui-small);
+	color: var(--text-muted);
+}
+
+.grove-mode-select {
+	font-size: var(--font-ui-small);
+}
+
+.grove-submit-btn {
+	margin-left: auto;
+}
+
+/* ── Spinner ─────────────────────────────────────────────────────── */
+
+.grove-spinner {
+	display: flex;
+	align-items: center;
+	gap: var(--size-4-2);
+	padding: var(--size-4-2) 0;
+	color: var(--text-muted);
+	font-size: var(--font-ui-small);
+}
+
+.grove-spinner-icon svg {
+	animation: grove-spin 1.2s linear infinite;
+}
+
+@keyframes grove-spin {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+/* ── Answer area ─────────────────────────────────────────────────── */
+
+.grove-answer-container {
+	margin-bottom: var(--size-4-3);
+}
+
+.grove-answer-container:empty {
+	display: none;
+}
+
+/* ── File button ─────────────────────────────────────────────────── */
+
+.grove-file-btn {
+	font-size: var(--font-ui-small);
+}
