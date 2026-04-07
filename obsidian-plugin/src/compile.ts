@@ -74,7 +74,7 @@ function getRemedy(code: string): string {
 
 export function registerCompileCommand(plugin: GrovePlugin): void {
 	plugin.addCommand({
-		id: "grove-compile",
+		id: "compile",
 		name: "Compile",
 		callback: () => {
 			runCompile(plugin);

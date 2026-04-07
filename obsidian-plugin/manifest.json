@@ -3,7 +3,7 @@
 	"name": "Grove",
 	"version": "0.1.0",
 	"minAppVersion": "1.5.0",
-	"description": "Knowledge compiler — turns raw sources into a structured, interlinked wiki.",
+	"description": "Compiles raw documents into a structured, interlinked wiki using LLMs.",
 	"author": "Digital Wonderlab",
 	"authorUrl": "https://digitalwonderlab.com",
 	"isDesktopOnly": true

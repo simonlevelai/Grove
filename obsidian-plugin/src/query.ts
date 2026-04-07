@@ -322,7 +322,7 @@ export function registerQueryPanel(plugin: GrovePlugin): void {
 	});
 
 	plugin.addCommand({
-		id: "grove-open-query",
+		id: "open-query",
 		name: "Open query panel",
 		callback: () => {
 			activateQueryPanel(plugin);

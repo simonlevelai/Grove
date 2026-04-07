@@ -472,7 +472,7 @@ function getRemedy(code) {
 }
 function registerCompileCommand(plugin) {
   plugin.addCommand({
-    id: "grove-compile",
+    id: "compile",
     name: "Compile",
     callback: () => {
       runCompile(plugin);
@@ -785,7 +785,7 @@ function registerQueryPanel(plugin) {
     activateQueryPanel(plugin);
   });
   plugin.addCommand({
-    id: "grove-open-query",
+    id: "open-query",
     name: "Open query panel",
     callback: () => {
       activateQueryPanel(plugin);
